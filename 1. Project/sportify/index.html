@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify - Web Player: Music for everyone </title>
+    <link rel="stylesheet" href="css/leftStyle.css">
+    <link rel="stylesheet" href="css/rightStyle.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <div class="left ">
+            <div class="home bg-gray12 ">
+                <div>
+                    <img width="110px" src="items/logo.png" alt="">
+                </div>
+                <ul class="HmSeIcon listyleNone">
+
+                    <a class="aLink" href="">
+                        <li class="flex ">
+                            <img width="20px" class="invert" src="items/home.svg" alt="Home"><b>Home</b>
+                        </li>
+                    </a>
+
+                    <a class="aLink" href="">
+                        <li class="Search flex hover">
+                            <img width="22px" class="invert " src="items/search.svg" alt="Search">Search
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="library bg-gray12 ">
+                <img src="" alt="">
+                ‖▮<h2 class="YrLb">Your Library</h2>
+            </div>
+            <div class="songList ">
+                <ul></ul>
+            </div>
+        </div>
+
+        <!-- right box here music -->
+
+        <div class="right ">
+
+            <nav class="flex justify-sb items-center bg-gray12">
+                <div class="gtltBtn">
+                    <button class="gtBtn borderNone bg-gray12 hover">‹</button>
+                    <button class="ltBtn borderNone bg-gray12 hover">›</button>
+                </div>
+                <ul class="flex items-center listyleNone">
+                    <li><button class="signbtn borderNone bg-gray12 hover">Sign Up</button></li>
+                    <li><button class="Loginbtn borderNone">Login</button></li>
+                </ul>
+            </nav>
+
+            <div class="PlayList">
+                <h1 class="SpyPlsH1">Sportify PlayLists</h1>
+                <div class="MusicGrid flex justify-cente  items-center">
+
+                    <div class="Music bg-gray12" id="M1" onmouseover="unhide()" onmouseout="hide()">
+                        <img class="albmImg" src="items/albmImg/61JOQrUB8sL.jpg" alt="">
+
+                        <div class="PlayBtn borderNone " >
+                            <img class="pplay PlayP1" src="items/Puse.png" alt="">
+                        </div>
+                        <h2>Aapne_Bachaya_Mujhe</h2>
+                        <p>Boost your mood and fill you with happiness</p>
+                    </div>
+
+                    <div class="Music bg-gray12" id="M2" onmouseover="unhide2()" onmouseout="hide2()">
+                        <img class="albmImg" src="items/albmImg/61JOQrUB8sL.jpg" alt="">
+
+                        <div class="borderNone PlayBtn2 PlayBtn " >
+                            <img class="pplay PlayP2" src="items/Puse.png" alt="">
+                        </div>
+                        <h2>Kewat_ke_ram</h2>
+                        <p>Boost your mood and fill you with happiness</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="AllMusicPlay" class="bg-k">
+                <span class="songinfo"></span>            
+                <span class="PPN flex justify-center
+                items-center">
+                    <button class="borderNone bg-k" id="PrivSong">◁</button>
+                    <button class="borderNone bg-k" id="pplay2" >⏸️</button>
+                    <button class="borderNone bg-k" id="NextSong">▷</button>
+                    <audio id="AMPlay" controls autoplay src=""></audio>
+                </span>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <span class="songtime"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/fetchSong.js"></script> -->
+
+    <script src="js/script2.js"></script>
+    <script src="js/fetchSong2.js"></script>
+    <script src="js/AllMusicAlbm2.js"></script>
+    <script src="js/HindeUnhide.js"></script>
+    
+</body>
+
+</html>

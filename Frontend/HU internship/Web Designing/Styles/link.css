@@ -1,0 +1,24 @@
+a{
+    text-decoration: none;
+    border:2px solid red;
+    padding:2px;
+    color:white;
+}
+
+ /* unvisited link */
+a:link{
+    background-color: blue;
+    
+}
+
+a:visited{
+    background-color: orange;
+}
+
+a:hover{
+    background-color:crimson;
+}
+
+a:active{
+    background-color: darkgreen;
+}

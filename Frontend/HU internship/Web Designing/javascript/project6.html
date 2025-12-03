@@ -1,0 +1,38 @@
+<!-- Color Picker -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            text-align: center;
+            margin-top:100px;
+            color:coral;
+        }
+
+        #para{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>Color Picker</h1>
+    <input type="color" id = "color1">
+    <p id="para"></p>
+    </div>
+
+    <script>
+         let choose = document.getElementById("color1");
+         let color = document.getElementById("para");
+
+         choose.addEventListener('input',()=>{
+            document.body.style.background = choose.value;
+            color.textContent = choose.value;
+            color.style.color = 'white';
+         })
+    </script>
+</body>
+</html>

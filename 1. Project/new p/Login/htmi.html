@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Demo</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <main class="card" role="main">
+    <div class="avatar" aria-hidden="true">
+      <!-- simple user icon inside the circle -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v1h20v-1c0-3.33-6.67-5-10-5z" />
+      </svg>
+    </div>
+    <div style="text-align:center;">
+      <h1>Welcome back</h1>
+      <p class="lead">Sign in with your Gmail and password</p>
+    </div>
+
+    <form id="loginForm"    autocomplete="on" novalidate>
+      <label class="input" for="emailInput">
+        <!-- mail icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+        <input id="emailInput" name="email" type="email" placeholder="Gmail" required aria-label="email" />
+      </label>
+
+      <label class="input" for="passwordInput">
+        <!-- lock icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 17a2 2 0 100-4 2 2 0 000 4zm6-6h-1V9a5 5 0 00-10 0v2H6a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2v-7a2 2 0 00-2-2zM8 9a4 4 0 118 0v2H8V9z" />
+        </svg>
+        <input id="passwordInput" name="password" type="password" placeholder="Password" required
+          aria-label="password" />
+        <span class="show-hide" id="togglePwd" title="Show/Hide password">Show</span>
+      </label>
+
+      <select name="" id="userselect" onclick="getUser()">
+        <option value="Admin">Admin</option>
+        <option value="Security">Security</option>
+        <option value="Student">Student</option>
+      </select>
+
+      <div class="actions">
+        <label class="remember"><input type="checkbox" id="remember" /> Remember</label>
+        <a href="#" style="font-size:13px;color:var(--accent);text-decoration:none">Forgot?</a>
+      </div>
+
+      <button type="submit" onclick="Verify()" class="btn">Log in</button>
+    </form>
+
+    <div class="alt">Don't have an account? <a href="#" style="color:var(--accent);text-decoration:none">Sign up</a>
+    </div>
+
+    <div id="msg" style="font-size:13px;color:var(--muted);margin-top:6px"></div>
+
+  </main>
+  <script src="scriot.js"></script>
+  <script src="storeData.js"></script>
+</body>
+
+</html>

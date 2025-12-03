@@ -1,0 +1,28 @@
+<!-- Light Bulb On/Off Toggle -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="on()">Turn On</button>
+    <img src="../images/bulboff.png" id="img">
+    <button onclick="off()">Turn Off</button>
+    <script>
+         function on()
+         {
+           document.getElementById("img").src = 
+           "../images/bulbon.png";
+         }
+
+         function off()
+         {
+            document.getElementById("img").src = 
+            "../images/bulboff.png";
+         }
+
+    </script>
+</body>
+</html>

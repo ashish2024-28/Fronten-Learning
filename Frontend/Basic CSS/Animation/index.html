@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:yellow ;
+            height: 80vw;
+            width: 30vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            /* animations */
+            /* animation-name: animi;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.74, 0.11, 0.25, 0.79);
+            animation-delay: 0s ; */
+             /* animation-direction: alternate-reverse; */
+             /* animation-fill-mode: forwards; */
+             /* animation-play-state: paused; */
+             
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: animi2 4s ease-in-out 0s infinite alternate-reverse,
+                   animi 4s ease-in-out 0s infinite alternate-reverse ;
+        /* animation: animi 4s ease-in-out 0s 1 backwards ; */
+        }
+
+        @keyframes animi {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: aqua;
+                transform: translateX(92vw);
+            }
+        }
+        @keyframes animi2 {
+            from{
+                transform: rotate(1deg) scale(1);
+            }
+            to{
+                transform: rotate(360deg) scale(3); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

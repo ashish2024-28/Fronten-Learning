@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI',sans-serif;
+     background: linear-gradient(rgba(191,191,191,0.5),rgba(191,191,191,0.5));
+}
+
+/* ------------ Header ------------- */
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/beach.avif");
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position: center;
+    height:100vh;
+    display:flex;
+    color:white;
+}
+
+.container{
+           text-align: center;
+           margin-left:650px;
+           margin-top:300px;
+}
+
+.container h1{
+       font-size:50px;  
+       margin-bottom: 20px;    
+}
+
+.container p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* ---------- Navigation bar------------ */
+.navbar ul li{
+    display:inline-block; 
+    margin:20px; 
+}
+
+.navbar ul a{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+}
+
+/* ----- Headings of all sections ------------*/
+section h2{
+    text-align: center;
+    font-size:30px; 
+    text-transform:capitalize;
+    margin-top:40px;
+    color:rgb(59, 57, 62)
+}
+
+/* -------------About---------- */
+#about{
+    text-align: center;
+}
+
+#about p{
+    margin-top:10px;
+}
+
+/* -------- Gallery ------------ */
+.gallery{
+    display:flex;
+    flex-wrap:wrap; 
+    justify-content:center;
+    gap:15px;
+}
+
+.gallery img{
+    height:200px;
+    width:150px;
+    margin-top:10px;
+} 
+
+/* ------- Activities---------- */
+.activities{
+  display: flex;
+  /* flex-wrap:wrap; */
+  justify-content: center;
+  gap:15px;
+  list-style-type: none;
+  margin-top:20px;
+}
+
+.activities li{    
+    border:1px solid;
+    border-radius: 30px;
+    background-color: rgb(67, 187, 185);
+    padding:10px 15px;
+    font-size: 20px;
+    color: white;
+    margin-bottom:20px;
+}
+
+#footer{
+    text-align: center;
+    color:white;
+    background-color: rgb(15, 162, 211);
+    height:50px;
+    padding:10px;
+}

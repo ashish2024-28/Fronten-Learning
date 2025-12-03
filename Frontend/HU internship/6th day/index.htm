@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(229, 229, 142);
+        }
+        .para {
+            background-color: yellow;
+            color: red;
+
+/* Syntax: start | end | left | right 
+| center | justify | match-parent */
+            text-align: center;
+
+/* Syntax: <'text-decoration-line'> || <'text-decoration-style'> ||
+            <'text-decoration-color'> || <'text-decoration-thickness'> */
+            text-decoration:underline wavy rgb(93, 180, 136) 5px ;
+            
+/* Syntax: none | [ capitalize | uppercase | lowercase ] ||
+  full-width || full-size-kana | math-auto */
+            text-transform :capitalize ; 
+
+            /* text indent for spacing to left only for first line */
+            text-indent:50px ;
+            letter-spacing: 2px;
+            word-spacing: 10px;
+            line-height: 50px;
+            
+            /* text-shadow: x y blur  color; */
+            text-shadow: 3px 5px 4px  gray;
+
+            /* box shadow */
+            box-shadow: 6px 10px 4px 0px red inset ;
+            box-shadow: 6px 10px 4px 0px red ;
+            /* all side shadow */
+            /* box-shadow: 6px 10px 4px 15px red  ; */
+            /* box-shadow: 6px 10px 4px 15px red inset ; */
+
+            /* inst-shadow: ; */
+            /* box-shadow:  -6px -10px  4px 0px red  inset;  */
+
+            
+            }
+        a{
+            text-decoration: none;
+        }
+
+        /*Font Property :- style , family , size , .. */
+        .para2{
+            font-style: italic;
+            font-variant:small-caps;
+            font-weight:bolder;
+            font-size: x-large;
+            font-family: cursive;
+
+            /* box model => context , padding , border , margin */
+            /* element around space called margin  */
+            /* margin:top right bottom left   ; 
+            and  padding: ;  content and border kay bich ka sapce*/
+            outline: 2px double blueviolet;
+            border-radius: 20px;
+            border-top: 5px solid;
+            margin: 20px 100px 20px 100px;
+            padding: 50px 100px 10px 100px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* border collaps or murge */
+        table,th,td{
+                border:2px solid rgb(178, 51, 203);
+                border-collapse: collapse;
+                padding: 10px;
+        }
+        .overf{
+            border: 2px solid;
+            width: 100px;
+            height: 100px;
+        /* Syntax: [ visible | hidden | clip | scroll | auto ]{1,2} */
+            overflow:visible scroll;
+            /* word-break: break-all; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- text :- color, alignment:(center,left,right) , decoration:(underline, ...) ,
+      transformation: (uppercase,capitalize,.... ) , spacing: () , shadow: () -->
+
+    <p class="para"> box model => context , padding , border , margin <br>
+            element around space called margin  <br>
+            margin:top right bottom left   ; <br>
+            and  padding: ;  content and border kay bich ka sapce<br> <br>
+</p>
+    <a href="www">link</a>
+
+    <!-- Font Property :- style , family , size , weight , varient ...... -->
+    <h1>
+        Font Property :- style , family , size , weight , varient ......
+
+    </h1>
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt possimus adipisci ipsa porro odio quod sit laborum, consectetur sint veniam. Delectus neque eaque quas laborum accusamus dicta. Facilis, cupiditate.</p>
+
+    <table>
+        <caption>std</caption>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Ram</td>
+            <td>Krishn</td>
+            <td>Shyam</td>
+        </tr>
+        <tr>
+            <!-- <th>Last Name</th> -->
+            <td>sharma</td>
+            <td>khanaya</td>
+            <td>shundar</td>
+
+
+        </tr>
+        <tr>
+            <th>Branch</th>
+            <td>cse</td>
+            <td>bca</td>
+            <td>mca</td>
+        </tr>
+    </table>
+
+    <p class="overf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, autem!
+    </p>
+
+</body>
+
+</html>

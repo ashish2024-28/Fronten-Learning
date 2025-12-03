@@ -1,0 +1,25 @@
+.Box{
+    background-color: yellow;
+    width: 40vw;
+    height: 30vh;
+    border: 2px solid black;
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+.Box2{
+    background-color: lightblue;
+    width: 40vw;
+    height: 30vh;
+    border: 2px solid black;
+    /* overflow: auto; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: hidden scroll;
+    
+    
+}

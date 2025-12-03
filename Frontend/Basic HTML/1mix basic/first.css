@@ -1,0 +1,200 @@
+body{
+    border: 5px yellow solid;
+    border-top: 5px red solid;
+    border-bottom: 5px green solid;
+
+}
+
+video{
+    border: 5px yellow solid;
+    border-top: 5px red solid;
+    border-bottom: 5px green solid;
+    border-left: 5px blue solid;
+    border-right: 5px purple solid;
+}
+
+h1{
+    border-top: 5px red solid;
+    border-bottom: 5px green solid;
+    border-left: 5px blue solid;
+    border-right: 5px purple solid;
+}
+h2{
+    border-top: 5px red solid;
+    border-bottom: 5px green solid;
+    border-left: 5px blue solid;
+    border-right: 5px purple solid;
+}
+h3{
+    border-top: 5px red solid;
+    border-bottom: 5px green solid;
+    border-left: 5px blue solid;
+    border-right: 5px purple solid;
+}
+p{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+       
+}
+a{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+img{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+aside{ 
+    width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+  float: right;
+  font-style: italic;
+  background-color: rgb(217, 231, 62);
+}
+
+pre{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+ul{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+li{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+table{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+th{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+td{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+form{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+input{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+button{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+label{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+select{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+option{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+textarea{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+span{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+div{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+iframe{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+canvas{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+svg{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+audio{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+iframe{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+object{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+embed{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}
+applet{
+    border-top: 2.5px red solid;
+    border-bottom: 2.5px green solid;
+    border-left: 2.5px blue solid;
+    border-right: 2.5px purple solid;
+}

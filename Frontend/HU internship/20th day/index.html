@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- call back => function kay ander function call -->
+    <!-- may method for calling -->
+
+    <script>
+        function add(a,b){
+            sum = a+b;
+            return console.log(sum);
+            
+        }
+        add(2,3);
+        
+        let resust = function sum(a,b,operation){
+            return operation(a,b);
+            
+        }
+        
+        console.log(resust(10,11,add));
+        
+        
+        // <!-- closure => meas access the value of variable (let, const)  those are initilize globaly or outside of function  -->
+
+        function count(){
+            let count =1;
+            return function setCounter(){
+                console.log(count++);
+            }
+        }
+        count()()
+        count()()
+        let store = count()
+        store()
+        store()
+        store()
+        </script>
+
+</body>
+</html>

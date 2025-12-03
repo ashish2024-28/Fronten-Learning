@@ -1,0 +1,23 @@
+div>p:first-child{
+    background-color: yellow;
+    color: red;
+}
+ 
+ div>p:not(:first-child) {
+    background-color: blue;
+    color: white;}
+
+/* ANOTHER METHOD */
+/* p{
+    background-color: blue;
+    color: white;
+}
+div p:first-child{
+    background-color:yellow ;
+    color: red;
+
+} */
+
+.button{
+    background-color: green;
+}

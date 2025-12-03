@@ -1,0 +1,83 @@
+*{
+    background-color: rgb(107, 255, 255);
+    text-align: center;
+
+}
+.mainh{
+    background-color: rgb(253, 4, 5);
+    box-shadow: 5px 5px ;
+    text-shadow: 8px 5px 5px rgb(68, 62, 62) ;
+    text-align: center;
+    font-family:cursive;
+    /* padding: auto; */
+    margin: auto;
+    /* position: absolute; */
+    position: sticky;
+    top: 0px;
+    
+
+}
+.heading{
+    background-color: yellow;
+    box-shadow: 5px 5px ;
+    text-shadow: 8px 5px 5px rgb(89, 87, 87) ;
+    text-align: center;
+    font-family:cursive;
+}
+.subh{
+    background-color: yellow;
+    box-shadow: 5px 5px ;
+    text-shadow: 8px 5px 5px rgb(89, 87, 87) ;
+    text-align: center;
+    font-family:cursive;
+    font-style: italic;
+}
+.cont{
+    display: flex;
+}
+.Click{
+    background-color:rgba(195, 248, 4, 0.793);
+    text-decoration:underline rgb(36, 85, 246);
+    color: rgb(225, 74, 63);
+}
+.a,.aimg{
+    border: 3px solid;
+    color: rgb(63, 100, 210);
+    /* background-color:rgba(195, 248, 4, 0.793); */
+    
+}
+.img1,.img2{
+    border-radius: 30px;
+    box-shadow: 10px 10px 4px red;
+}
+.img3{
+    height: 150px;
+    width: 150px;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+    position: fixed;
+    bottom: 0px;
+    right: 82vw;
+
+}
+.img4{
+    height: 150px;
+    width: 150px;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+    position: fixed;
+    bottom: 0px;
+    left: 80vw;
+
+}
+.p{
+    height: auto;
+}
+.leg{
+    font-size: large;
+    font-family: cursive;
+    text-decoration: underline red;
+    background-color: yellow;
+}

@@ -1,0 +1,82 @@
+<!-- Interactive Image Gallery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .outer{
+            height:1000px;
+            width:800px;
+            box-shadow: 3px 5px 20px gray;
+            text-align: center;
+        }
+        .inner1 img{
+            height:800px;
+            width:700px;
+            opacity:0.8;
+        }
+        
+     
+        .inner2 img{
+            height:190px;
+            width:190px;
+            opacity:0.5;
+            
+        }
+
+        .inner2 img:hover{
+            opacity:1;
+            border:2px solid blueviolet;
+        }
+
+        .active {
+            border: 2px solid blueviolet;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">
+            <img src="../images/panda.png" id="img1">
+        </div>
+        <div class="inner2">
+            <img src="../images/cat.png" class="thumbnail">
+            <img src="../images/dog.png" class="thumbnail">
+            <img src="../images/hamster.png" class="thumbnail">
+            <img src="../images/monkey.png" class="thumbnail">
+        </div>
+    </div>
+
+    <script>
+        // Get main image and all thumbnails
+        const mainImage = document.getElementById("img1");
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const inner2 = document.querySelector('.inner2');
+
+        // Function to update the main image when a thumbnail is clicked
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Update the main image
+                mainImage.src = this.src;
+
+                // Remove the active class from all thumbnails
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+
+                // Add active class to the clicked thumbnail
+                this.classList.add('active');
+
+                // Move the clicked thumbnail to the end of the list
+                inner2.appendChild(this);
+            });
+        });
+</script>
+</body>
+</html>

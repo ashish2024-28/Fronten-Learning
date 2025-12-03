@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* extra use css */
+        div,
+        table {
+            border: 2px solid;
+        }
+
+        th {
+            border: 2px solid;
+
+        }
+
+        td {
+            border: 2px solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tr tag for table row -->
+    <!-- th heading -->
+    <!-- td data -->
+    <!-- Colspan use to marge column  => <th colspan="2"></th>  -->
+    <!-- rowspan use to marge row  =>  <th rowspan="2"></th> -->
+
+    <div>
+        <h1>
+            caption tag for tittle of table <br>
+            tr tag for table row <br>
+            th for heading<br>
+            td for data<br>
+            Colspan use to marge column => &lt;th colspan="2">&lt;/th><br>
+            rowspan use to marge row => &lt;th rowspan="2">&lt;/th><br>
+        </h1>
+    </div>
+
+    <thead> </thead>
+    <tbody> </tbody>
+    <tfoot> </tfoot>
+
+
+    <table>
+        <caption> Information Of Student</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Address</th>
+
+        <tr>
+            <td>ram</td>
+            <td>cse</td>
+            <td>pune</td>
+        </tr>
+
+        <tr>
+            <td>shyam</td>
+            <td>cse ai</td>
+            <td>haridwar</td>
+
+        </tr>
+
+        <tr>
+            <td>krishn</td>
+            <td>cse ds</td>
+            <td>up</td>
+
+        </tr>
+
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <caption> Information Of Student</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Branch</th>
+
+        <tr>
+            <td>ram</td>
+            <td>sharma</td>
+            <td>cse</td>
+        </tr>
+
+        <tr>
+            <td>shyam</td>
+            <td>shundar</td>
+            <td>cse ai</td>
+
+        </tr>
+
+        <tr>
+            <td>krishn</td>
+            <td>khanaya</td>
+            <td>cse ds</td>
+
+        </tr>
+
+
+        </tr>
+    </table>
+    <hr>
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td>Ram</td>
+            <td>Krishn</td>
+            <td>Shyam</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>sharma</td>
+            <td>khanaya</td>
+            <td>shundar</td>
+
+
+        </tr>
+        <tr>
+            <th>Branch</th>
+            <td>cse</td>
+            <td>bca</td>
+            <td>mca</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <table>
+        <caption> Information Of Student</caption>
+
+        <tr>
+            <th colspan="2">Name</th>
+
+            <th>Branch</th>
+
+        <tr>
+            <td>ram</td>
+            <td>sharma</td>
+            <td>cse</td>
+        </tr>
+
+        <tr>
+            <td>shyam</td>
+            <td>shundar</td>
+            <td>cse ai</td>
+
+        </tr>
+
+        <tr>
+            <td>krishn</td>
+            <td>khanaya</td>
+            <td>cse ds</td>
+
+        </tr>
+
+    </table>
+    <hr>
+
+    <table>
+        <caption>std</caption>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Ram</td>
+            <td>Krishn</td>
+            <td>Shyam</td>
+        </tr>
+        <tr>
+            <!-- <th>Last Name</th> -->
+            <td>sharma</td>
+            <td>khanaya</td>
+            <td>shundar</td>
+
+
+        </tr>
+        <tr>
+            <th>Branch</th>
+            <td>cse</td>
+            <td>bca</td>
+            <td>mca</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- video tag for video -->
+    <video controls src="ak.mp4"></video>
+    <!-- <video height="400px"  autoplay src="ak.mp4"  ></video> -->
+    <!-- <video height="400px" muted autoplay loop src="ak.mp4"  ></video> -->
+
+    <!-- audio tag for audio -->
+    <audio controls src="ak.mp4"></audio>
+    <!-- <audio controls autoplay muted src="ak.mp4"></audio> -->
+    <!-- <audio controls autoplay loop muted src="ak.mp4"></audio> -->
+    <br> <hr>
+
+    
+    <iframe width="49%" src="index.html" name="frame1"frameborder="0"></iframe>
+    <iframe width="50%" src="demo.html" name="frame2"frameborder="0"></iframe>
+    
+    <a href="demo.html" target="frame1">go here f1 demo</a> <br>
+    <a href="index.html" target="frame2">go here f2 index</a>
+
+    
+</body>
+
+</html>

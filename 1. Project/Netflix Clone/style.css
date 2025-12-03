@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    text-shadow: 1px 1px 2px black;
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 100px;
+    position: relative;
+    z-index: 10;
+    filter: blur();
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 13px;
+    padding: 0px 30px;
+
+}
+
+.hero>:first-child {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-size: 20px;
+    font-weight: 350;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sepration {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    padding: 2.4px 6px 2.4px 5px;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.413);
+    border: 1px solid rgba(255, 255, 255, 0.503);
+    border-radius: 3px;
+}
+
+#Language {
+    background-color: rgba(0, 0, 0, 0.413);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.413);
+    padding: 2px 0px 0px 0px;
+}
+
+.EH {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.503);
+    background-color: rgba(0, 0, 0, 0.413);
+
+}
+
+.btn-red-sm {
+    background-color: rgba(255, 0, 0, 0.85);
+    color: white;
+    padding: 3px 7px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.btn-red {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 3px;
+    color: white;
+    padding: 4px 25px 4px 10px;
+    font-size: 15px;
+}
+
+#email {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.431);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 4px 10px 4px 10px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+
+.Enjoy {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.p1 {
+    font-size: 15px;
+}
+
+.video1 {
+    transform: rotate(270deg);
+    position: relative;
+    left: 80px;
+    border: 5px solid white;
+
+}
+
+/* media quari is left set new style for <900px  */
+
+@media screen and (max-width:900px) {
+    body {
+       .main {
+    background-image: url(assets/images/bg.jpg);
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    text-shadow: 1px 1px 2px black;
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 100px;
+    position: relative;
+    z-index: 10;
+    filter: blur();
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 13px;
+    padding: 0px 30px;
+
+}
+
+.hero>:first-child {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-size: 20px;
+    font-weight: 350;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sepration {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    padding: 2.4px 6px 2.4px 5px;
+    font-weight: 300;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.413);
+    border: 1px solid rgba(255, 255, 255, 0.503);
+    border-radius: 3px;
+}
+
+#Language {
+    background-color: rgba(0, 0, 0, 0.413);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.413);
+    padding: 2px 0px 0px 0px;
+}
+
+.EH {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.503);
+    background-color: rgba(0, 0, 0, 0.413);
+
+}
+
+.btn-red-sm {
+    background-color: rgba(255, 0, 0, 0.85);
+    color: white;
+    padding: 3px 7px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.btn-red {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 3px;
+    color: white;
+    padding: 4px 25px 4px 10px;
+    font-size: 15px;
+}
+
+#email {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.431);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 4px 10px 4px 10px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+
+.Enjoy {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.p1 {
+    font-size: 15px;
+}
+
+.video1 {
+    transform: rotate(270deg);
+    /* position: relative; */
+    left: 80px;
+    border: 5px solid white;
+
+}
+
+    }
+}

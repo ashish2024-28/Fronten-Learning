@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 600px;
+            width: 600px;
+            margin: auto;
+            background-color: blue;
+            border-bottom: 10px solid;
+        }
+        .circle{
+            background: linear-gradient(rgb(4, 72, 46),green,rgb(49, 147, 70),green ,rgb(0, 86, 28));            
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: anmi1 8s ease-in-out 1s infinite;        }
+        
+        
+        @keyframes anmi1 {
+            0%{
+            }
+            10%{
+                transform: translateY(500px) translateX(0px);
+            }
+            20%{
+                transform: translateY(150px) translateX(20px);
+            }
+            30%{
+                transform: translateY(500px) translateX(35px);
+            }
+            40%{
+                transform: translateY(250px) translateX(45px);
+            }
+            50%{
+                transform: translateY(500px) translateX(50px);
+            }
+            60%{
+                transform: translateY(350px) translateX(55px);
+            }
+            70%{
+                transform: translateY(500px) translateX(60px);
+            }
+            80%{
+                transform: translateY(450px) translateX(65px);
+            }
+            90%{
+                transform: translateY(500px) translateX(70px);
+            }
+            91%{
+                transform: translateY(490px) translateX(75px);
+            }
+            92%{
+                transform: translateY(495px) translateX(80px);
+            }
+            93%{
+                transform: translateY(500px) translateX(85px);
+            }
+            94%{
+                transform: translateY(497px) translateX(90px);
+            }
+            
+            95%{
+                transform: translateY(500px) translateX(100px);
+            }
+            96%{
+                transform: translateY(499px) translateX(103px);
+            }
+             95%{
+                transform: translateY(500px) translateX(105px);
+            }
+            
+            100%{
+                transform: translateY(500px) translateX(600px) rotate(90deg);
+            }
+            
+            
+
+    }        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

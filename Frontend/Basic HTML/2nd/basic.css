@@ -1,0 +1,13 @@
+h1{
+    color: red; /* color property */
+    background-color: green; /*Background color property */
+    background-color:rgb(240, 240, 29) ; /* color system RGB & HEX(hexadecimal)*/
+    /* less priority then body or in html useing style  (using in css called external stylesheet)*/
+}
+img{
+    size: 1000;
+    border: 10px;
+}
+p{
+    font-size: x-large;
+}

@@ -1,0 +1,55 @@
+<!-- Random Quote Generator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            text-align: center;
+            color:darkgreen;
+        }
+        
+        #para{
+            border:2px solid black;
+            background-color: white;
+            height:150px;
+            width:400px;
+            padding:20px;
+            font-style: italic;
+            font-family: cursive;
+            color:orangered;
+            margin:auto;
+            border-radius: 25px 50px 25px 50px;
+        }
+
+        .btn{
+            font-size: 20px;
+            border-radius: 10px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <h1 class="head">Today's Thought of the day</h1>
+    <p id = "para"></p><br>
+    <button class="btn" onclick="display()">Click here</button>
+
+    <script>
+    function display()
+    {
+      let arr = ["To love oneself is the beginning of a lifelong romance.",
+      "Time you enjoy wasting is not wasted time.",
+      "Self-care is how you take your power back.",
+       "Being happy never goes out of style.",
+      "No one can make you feel inferior without your consent."];
+      
+      let index = Math.floor(Math.random()*arr.length);
+      document.getElementById("para").innerHTML = arr[index];
+    }
+      </script>
+</body>
+</html>

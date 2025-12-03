@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bk{
+            border-radius: 25px;
+            background-color: white;
+        }
+        #box{
+            width: 50vw;
+            height: 40vh;
+            margin: auto;
+            text-align: center;
+        }
+        #color{
+            width: 25vw;
+            height: 15vh;
+            padding: 10px;
+        }
+        #para{
+            text-align: center;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+        <h1 class="bk">
+            Color Picker
+        </h1>
+        <!-- call function when -->
+        <input type="color" onmouseleave="color()" name="" id="color">
+        <b><p class="bk" id="para">Choose any color</p></b>
+    </div>
+
+</body>
+<script>
+    function color(){
+        let color = document.getElementById("color");
+        let para = document.getElementById("para");
+
+        // also use EventListener on input tag type="color" ya call function 
+        // color.addEventListener('input',()=>{
+
+        document.body.style.backgroundColor = color.value;
+        para.innerText  = ("You are choose " + color.value + " color");
+        // para.textContent = color.value;
+//    } );
+    }
+</script>
+
+</html>

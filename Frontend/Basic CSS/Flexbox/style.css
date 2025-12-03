@@ -1,0 +1,39 @@
+.container{
+    border: 2px solid red;
+    /* use Flex */
+    display: flex;
+    /* for row */
+    /* flex-direction: row; */
+    justify-content: center;
+    /* justify-items: center; */
+
+    /* for column */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* align-content: center; */
+    flex-wrap: wrap;
+    /* flex-flow: row wrap-reverse; */
+    gap: 20px 15px;
+
+}
+.item{
+    height: 36px;
+    width:36px;
+    background-color: rgb(169, 22, 233);
+    border: 2px solid black;
+    /* margin: 5px;  */
+    /* use gap property in container */
+    padding: 5px;
+    /* display: inline-block; */
+
+}
+.first{
+    order: 1;
+    overflow: hidden;
+}
+.first{
+    flex-grow: .1;
+    flex-shrink: 1;
+    /* align-self: flex-start; */
+}
+

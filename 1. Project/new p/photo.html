@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store Photo in JS</title>
+</head>
+<body>
+  <h2>Upload & Convert Photo</h2>
+  <input type="file" id="photoInput" />
+  <img id="preview" width="200" />
+
+  <script>
+    document.getElementById("photoInput").addEventListener("change", function(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+
+      reader.onloadend = function() {
+        const base64String = reader.result;
+        console.log("Base64 Image:", base64String);
+
+        // Show preview
+        document.getElementById("preview").src = base64String;
+
+        // Yaha tum base64 ko DB me store kar sakte ho backend API call se
+      };
+
+      if (file) {
+        reader.readAsDataURL(file); // Convert to Base64
+      }
+    });
+  </script>
+</body>
+</html>
+<!-- 
+<select name="userSelect" id="userselect">
+  <option value="Admin">Admin</option>
+  <option value="Security">Security</option>
+  <option value="Student">Student</option>
+</select>
+
+<button onclick="getUser()">Check Selected</button>
+
+<script>
+  function getUser() {
+    // Get the select element
+    let userSelect = document.getElementById("userselect");
+
+    // Get the selected value
+    let selectedValue = userSelect.value;
+
+    // (Optional) Get the selected text
+    let selectedText = userSelect.options[userSelect.selectedIndex].text;
+
+    alert("Value: " + selectedValue + "\nText: " + selectedText);
+  }
+</script> -->

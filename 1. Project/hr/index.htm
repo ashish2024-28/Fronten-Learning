@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        margin: auto;
+        padding: auto;
+    }
+    .formdesign{
+        font-size: 30px;
+    }
+    .formdesign input{
+        width: 50%;
+        padding: 12px;
+        margin: 15px;
+        border: 1px solid blue;
+        border-radius: 5px;
+    }
+    .formerror{
+        color: red;
+    }
+    .but{
+        border-radius: 10px;
+        width: 150px;
+        height: 35px;
+        font-size: 25px;
+        margin:20px 30px ;
+    }
+</style>
+<body>
+    
+    <form action="" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+            Name :- <input type="text" name="fname" >
+           <b> <span class="formerror" id="e1"></span> </b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email :- <input type="email" name="femail" >
+           <b> <span class="formerror" id="e2"></span> </b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone :- <input type="phone" name="fphone" >
+           <b> <span class="formerror"></span> </b>
+        </div>
+        
+        <div class="formdesign" id="pass">
+            Password :- <input type="password" name="fpass" >
+           <b> <span class="formerror"></span> </b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Conform Password :- <input type="password" name="fcpass"  id="">
+           <b> <span class="formerror"></span> </b>
+        </div>
+
+        <input class="but" type="submit" name="" value="Submit">
+    </form>
+
+    <script>
+
+        function seterror(id,error){
+        //  stes error inside tag of id
+        element = document.getElementById(id);
+        // element.getElementsByClassName('formerror')[0].innerHTML = error;
+        // element.getElementById("e1").innerHTML =error;
+        }
+
+        function validateForm(){
+            var returnval = true;
+            // perform validation and  if validation fails, set the value of returnval to false
+            // var name = document.getElementById("fname").value;
+            var name = document.forms['myForm']["fname"].value;
+            if(name.lenght < 5){
+                seterror("name","*Length of name is too short");
+                returnval = false;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

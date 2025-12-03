@@ -1,0 +1,46 @@
+<!-- Highlight Inner Circle on Button Click -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border:2px solid black;
+            height:200px;
+            width:200px;
+            border-radius: 30px;
+            background-color: black;
+            position: relative;
+        }
+
+        #inner{
+            border:2px solid white;
+            height:150px;
+            width:150px;
+            position:absolute;
+            top:25px;
+            left:25px;
+            border-radius: 50%;
+        }
+      .btn{
+        margin-top:20px;
+        margin-left: 60px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div id="inner"></div>
+    </div>
+    <button class="btn" onclick="on()">Click here</button>
+    <script>
+        function on(){
+            document.getElementById("inner").style.backgroundColor="yellow";
+        document.getElementById("inner").style.boxShadow="0px 0px 50px orange";
+        }
+    </script>
+</body>
+</html>

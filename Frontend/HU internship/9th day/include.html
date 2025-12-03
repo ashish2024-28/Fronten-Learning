@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- responsive website  -->
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            transition: width 2s all;
+            transition-delay: 1s;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transform: skewY(10px);
+        }
+
+        .container:hover {
+            text-align: center;
+            width: 200px;
+            /* transform: ; */
+            transform: translateY(50px) translateX(5px) scaleX(2) rotate(-20deg);
+
+        }
+
+        /* animation */
+        .Bbox {
+            height: 60vh;
+            width: 70vw;
+            border: 2px solid;
+            background-color: aqua;
+
+        }
+
+        .box {
+            /* position: relative; */
+            height: 60px;
+            width: 70px;
+            border: 2px solid black;
+            background-color: aqua;
+            text-align: center;
+            align-content: center;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:
+                /* animation-fill-mode: both; */
+                anime1 3s ease-in-out 1s infinite alternate-reverse forwards;
+
+
+
+        }
+
+        @keyframes anime1 {
+            0% {
+                background-color: red;
+                color: yellow;
+            }
+
+            25% {
+                background-color: blue;
+                transform: translateX(61vw) rotate(90deg);
+                color: white;
+            }
+
+
+            50% {
+                background-color: green;
+                transform: translateX(61vw) translateY(48vh) rotate(180deg);
+                color: rgb(137, 11, 241);
+
+            }
+
+            75% {
+                background-color: yellow;
+                transform: translateX(-0vw) translateY(48vh) rotate(270deg);
+                color: rgb(254, 3, 3);
+
+            }
+
+            100% {
+                background-color: red;
+                color: white, yellow;
+                transform: translateX(0vw) translateY(0vh) rotate(360deg);
+
+            }
+
+        }
+
+        .div {
+            height: 30vh;
+            border: 2px solid red;
+            margin: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+
+        }
+
+        @media screen and (max-width :800px) {
+            body {
+                background-color: red;
+
+                .div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
+
+            }
+        }
+
+        @media screen and (max-width :500px) {
+            body {
+                background-color: yellow;
+
+                .div {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                }
+
+            }
+        }
+
+        .d1 {
+            border: 2px solid;
+            background-color: orange;
+
+
+        }
+
+        .d2 {
+            border: 2px solid;
+            background-color: rgb(242, 0, 255);
+
+
+        }
+
+        .d3 {
+            border: 2px solid;
+            background-color: rgb(25, 0, 255);
+
+
+        }
+
+        .d4 {
+            border: 2px solid;
+            background-color: rgb(0, 255, 153);
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- transitison /animation -->
+    <!-- transformation => scale , skew , rotate -->
+    <div class="container">
+        div <br> class <br>container
+    </div>
+
+    <!-- animation -->
+    <div class="Bbox">
+        <div class="box">BOX</div>
+    </div>
+    <div class="div">
+        <div class=" d d1">div 1</div>
+        <div class="d2 d">div 2</div>
+        <div class="d3 d">div 3</div>
+        <div class="d4 d">div 4</div>
+    </div>
+</body>
+
+</html>

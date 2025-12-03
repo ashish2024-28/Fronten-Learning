@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(70, 185, 147);
+        }
+    </style>
+</head>
+
+<body>
+
+    <pre> <b> pre tag use to same input and output  </b>
+          My Name I😊s Ashish
+    </pre>
+
+    <!-- Block element  vs Inline element -->
+    <!-- inline ki height & weight change nhi hota -->
+
+    <div>
+        <h2>
+            Block element vs Inline element
+        </h2>
+        <b>
+            inline element ki height & weight change nhi hota
+        </b>
+    </div>
+
+    <div>
+        <p> p tag </p></label>
+        <span> span tag </span>
+        <span> span tag </span>
+        <p> p tag </p>
+        <p>class use many tags and id but id is unique</p>
+    </div>
+
+    <!-- class use many tags but id is unique -->
+
+    <!-- &lt < , &lt > , &ndsp  html character intities -->
+    <img src="https://dotnettrickscloud.blob.core.windows.net/img/html/3720230512122352.webp" alt="Character intities">
+
+
+
+    <!-- form tag for Form -->
+    <!-- attributs for form -> action -> address to store data ,methot-> get & post , post secure data -->
+    <form action="sumition.html" method="post">
+        <label for="">Name :- </label>
+        <input type="text" placeholder="Enter You Name" required size="50" autofocus maxlength="10">
+        <br>
+
+        <label for=""></label>
+        Region :- <input value="India" type="text" name="gg" placeholder="Enter Your Region" required readonly disabled>
+        <br>
+
+        <!-- <label for="">Gender :- <input type="radio" name="Gender"> Male <input type="radio" name="Gender"> Female</label><br> -->
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gender" id="Male" required>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Female">
+        <label for="Female">Female</label>
+        <br>
+
+        <label for="email">Email :-</label>
+        <input type="email" pattern="@gmail.com" id="email" placeholder="Enter Email">
+        <br>
+        <label for="password">Password :-</label>
+        <input type="password" id="password" pattern="(?=.*[a-z]),(?=.*[A-Z]),(?=.*[1-9])" placeholder="Enter password"
+            title="password contain a-z,A-Z,0-9">
+        <br>
+
+        <textarea placeholder="enter suggestion" rows="5" cols="25"></textarea>
+
+        <br>
+        <label for=""> state :- </label>
+        <select name="aasd" id="">
+            <option value=""> Bihar</option>
+            <option value="">UP </option>
+            <option value=""> UK</option>
+        </select>
+        <br>
+
+        <label for=""> Language :- </label>
+        <input type="checkbox" name="as" id=""> Hndi
+        <input type="checkbox" name="as">English <br>
+
+        <label for=""> <input type="checkbox" name="aa"> i agree</label> <br>
+
+        <input type="color"> <br>
+        <input type="date"> <br>
+        <input type="time"> <br>
+        <input type="file" name="" id="" maxlength="100mb"> <br>
+        Linked In :- <input type="url" placeholder=" enter proper URL"><br>
+        <input type="number" name="" id="" min="1" max="10"><br>
+        <input type="range" name="" id="" min="100 RS" max="10000 RS"> <br>
+
+        <input type="file" name="" id="">
+
+         <button type="button">Button submit</button>
+        <input type="reset" name="" id="">
+        <input type="submit" name="">
+
+    </form>
+
+
+    <!-- fieldset means same type or same group -->
+    <!-- legend use for heading of fieldset -->
+    <h1>use of fieldset and legend </h1>
+    <fieldset>
+        <legend>Contact Us</legend>
+        <form action="index.htm" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" required> <br>
+            <label for="Email">Email</label>
+            <input type="email" name="" id="Email" required> <br>
+            <label for="messageFields">Message Fields</label>
+            <textarea name="messageFields" id="messageFields" required></textarea> <br>
+            <!-- <label for="submit">Submit</label> -->
+            <input type="submit" name="submit" id="submit" required>
+        </form>
+    </fieldset>
+
+
+</body>
+
+</html>

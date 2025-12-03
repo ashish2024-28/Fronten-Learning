@@ -1,0 +1,55 @@
+/* universal selector */
+* {
+    background-color: rgb(70, 185, 147);
+    text-align: justify;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.External {
+    border-radius: 15px 0px 15px 0px;
+    background-color: yellow;
+    color: gray;
+    text-align: center;
+}
+
+.p {
+
+    background-color: blue;
+    text-align: center;
+}
+
+div {
+    font-size: 20px;
+    justify-self: center;
+}
+
+/* Group selector */
+table,
+th,
+td {
+    border-radius: 0px;
+    text-align: center;
+    border: 2px dashed rgb(17, 0, 255);
+}
+
+table {
+    padding: 10px;
+    /* border -> width/size,style,color */
+    border-radius: 20px 0px 20px 0px;
+}
+
+/*  all background  property*/
+body {
+    /* background-color: aqua; */
+    background-image: url("81k974mPmwL.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat-x; */
+    
+    /* background-blend-mode:color-burn; */
+    background-attachment: fixed;
+    /* background-attachment:scroll; */
+   
+}

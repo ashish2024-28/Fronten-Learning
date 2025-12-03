@@ -1,0 +1,10 @@
+body{
+    background-image: url(81k974mPmwL.jpg);
+    background-repeat: no-repeat;
+    /* background-blend-mode:color-burn; */
+    /* background-repeat: repeat; */
+}
+table,th,td{
+    border: 2px solid rgb(5, 243, 72);
+    
+}

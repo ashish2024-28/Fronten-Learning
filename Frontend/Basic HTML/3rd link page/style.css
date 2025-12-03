@@ -1,0 +1,20 @@
+h1 {
+    color: yellow;
+    /* block-size: 20px; */
+    background-color: rgb(230, 39, 39);
+    background-size: 20px;
+}
+
+.button {
+
+    border: 10px solid rgb(116, 203, 254);
+    border-radius: 10px;
+    /* margin: 0; */
+    padding: 0;
+}
+
+.a {
+
+    background-color: rgb(116, 203, 254);
+    color: black;
+}

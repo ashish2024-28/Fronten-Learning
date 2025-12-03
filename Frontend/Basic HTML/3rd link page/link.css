@@ -1,0 +1,15 @@
+ .button{
+            font-size:xx-large;
+        }
+        b{
+            background-color: rgb(249, 249, 51);
+            border: 5px solid yellow;
+            margin-left: 15%;
+        }
+        .button button{
+            background-color: rgb(253, 235, 78);   
+            font-size:medium;
+            padding: 10px 15px 10px 15px ;
+            margin: 20px 0px 10px 10px ;
+
+        }

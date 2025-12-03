@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            height:300px;
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items:flex-end;
+            border:1px solid blue;
+            /* flex-wrap: wrap-reverse; */
+        }
+        .abc{
+            border:2px solid red;
+            height:70px;
+            width:100px;
+            margin:30px;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="abc" style="flex-shrink:0">HTML</div>
+        <div class="abc">CSS</div>
+        <div class="abc">JS</div>
+        <!-- <div class="abc">Python</div>
+        <div class="abc" >Java</div>
+        <div class="abc" >C++</div>   
+        <div class="abc" >Data Science</div> -->
+        
+    </div>
+</body>
+</html>

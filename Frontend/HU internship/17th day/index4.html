@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 40px;
+            padding-top: 30px;
+        }
+
+        .box {
+            padding: 5px;
+            text-align: center;
+            background-color: lightblue;
+            margin: auto;
+            width: 80vw;
+            border-radius: 100px 5px;
+            /* height: 100vh; */
+        }
+
+        #para {
+            font-size: 25px;
+            border-radius: 25px;
+            margin: 10vh auto;
+            padding: 15px;
+            border: 2px solid;
+            background-color: lightyellow;
+            width: 50vw;
+            /* height: 70vh; */
+        }
+
+        button {
+            font-size: large;
+            width: 200px;
+            padding: 8px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Today's Thought of the day </h1>
+        <p id="para">
+            The mind is everything. What you think you become. - Buddha,
+        </p>
+        <button onclick="NewQuort()">
+            New Quotes
+        </button>
+        <p id="idx"></p>
+    </div>
+
+
+    <script>
+        const myQuotes = [
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "Believe you can and you're halfway there. - Theodore Roosevelt",
+            "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+            "It is during our darkest moments that we must focus to see the light. - Aristotle Onassis",
+            "Strive not to be a success, but rather to be of value. - Albert Einstein",
+            "The mind is everything. What you think you become. - Buddha",
+            "An unexamined life is not worth living. - Socrates",
+            "Life is what happens when you're busy making other plans. - John Lennon",
+            "The only impossible journey is the one you never begin. - Tony Robbins",
+            "Act as if what you do makes a difference. It does. - William James"
+        ];
+
+
+        function NewQuort() {
+            
+            // let index = Math.floor(Math.random() * myQuotes.length);
+            // but here Math.random() is generat different values
+            let index1 = Math.random();
+            let index2 = myQuotes.length;
+            let index3 = index1*index2;
+            let index = Math.floor(index3);
+
+            let p = document.getElementById("para");
+            p.innerHTML = myQuotes[index];
+            
+
+            let pidx = document.getElementById("idx");
+               
+            pidx.innerHTML = index +" , Math.floor( " +index1 +" * " +index2 +" ) = " +index ;
+
+        }
+    </script>
+
+</body>
+
+</html>

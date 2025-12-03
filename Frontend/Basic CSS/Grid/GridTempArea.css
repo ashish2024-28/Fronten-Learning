@@ -1,0 +1,35 @@
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "side article article "
+                         "footer footer footer";
+    
+}
+
+.items{
+    border: 2px solid red;
+    height:55px;
+    /* width: 55px; */
+}
+.item1{
+   grid-area: nav;
+   background-color: rgb(255, 255, 125);
+}
+.item2{
+    grid-area: side;
+    background-color: rgb(135, 223, 173);
+}
+.item3{
+    grid-area: article;
+    background-color: #88f4f8;
+}
+/* Overlap 1 and 5 because of both are nav */
+.item5{
+    grid-area:nav; 
+    /* background-color: rgb(233, 149, 246); */
+}
+.item4{ 
+    grid-area:footer;
+    background-color: rgb(239, 250, 191);
+}

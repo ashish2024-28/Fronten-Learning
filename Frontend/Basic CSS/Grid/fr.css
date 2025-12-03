@@ -1,0 +1,27 @@
+.container{
+    width: 80vw;
+    height: 90vh;
+    border: 2px solid rgb(0, 0, 0);
+    display: grid;
+    /* grid-template-areas: "nav nav nav"
+                         "side article article "
+                         "footer footer footer"; */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* row-gap: 10px ;
+    column-gap: 10px; */ 
+    /* gap:row column */
+    gap: 10px 10px;
+    justify-items: center;
+    align-items: center;
+    /* place-content: center; */
+}
+
+.items{
+    place-content: center;
+    border: 2px solid red;
+    height:55px;
+    width: 55px;
+}
+.item1{
+    align-self:stretch ;
+}

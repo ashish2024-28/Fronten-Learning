@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="OFF()" >Turn OFF</button>
+    <img id="img" width="250px" src="OFF.png" alt="">
+    <button onclick="ON()" >Turn On</button>
+    
+    <!-- event mean when button click -->
+    <!-- <button onclick="OFF()" >Turn OFF</button>
+    <img id="img" width="250px" src="OFF.png" alt="">
+    <button onclick="ON()" >Turn On</button> -->
+
+    <script>
+        function ON(){
+        document.getElementById("img").src= "ON.png";
+        }
+        function OFF(){
+        document.getElementById("img").src= "OFF.png";
+        }
+    </script>
+    <!-- <script src="style.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Interactive DOM Event Handling Demo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para" onmouseover="style.backgroundColor='red'" 
+    onmouseout="style.backgroundColor = 'lightblue'">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid error
+         fugit mollitia illo corporis nostrum, excepturi laborum
+          quas quibusdam laudantium facere laboriosam, accusamus 
+          natus itaque enim voluptas quam porro provident.</p>
+    <button onclick="show()">Show/Hide</button><br><br>
+
+    <input type="text" onkeyup="style.color='green'"
+     onkeydown="style.color='blue'"><br><br>
+
+     <input type="text" onfocus="style.width='200px'" 
+     onblur="style.width='150px'">
+    <script>
+        //  function show()
+        //  {
+        //    let p = document.getElementById("para");
+        //    if(p.style.display=='none')
+        //    {
+        //     p.style.display = "block";
+        //    }
+        //    else{
+        //     p.style.display = "none";
+        //    }
+        //  }
+
+        const d = document.getElementById("para");
+        d.addEventListener('mouseover',function()
+      {
+        d.style.color="white";
+      });
+    </script>
+    </body>
+</html>

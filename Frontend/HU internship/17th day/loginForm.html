@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+
+        body {
+            background-color: lightslategray;
+        }
+
+        fieldset {
+            border: 2px solid;
+            border-radius: 30px;
+            text-align: center;
+            width: 30vw;
+            /* height: 90vh; */
+            margin: auto;
+            background-color: lightyellow;
+            box-shadow: 10px 10px 5px;
+        }
+
+        div {
+            padding: 50px;
+        }
+
+        .leg {
+            text-decoration: underline;
+        }
+
+        #UserId {
+            /* margin: 30px; */
+            font-size: 20px;
+            width: 300px;
+            padding: 5px;
+
+        }
+
+        #password {
+            /* margin: 30px; */
+            font-size: 20px;
+            width: 300px;
+            padding: 5px;
+
+        }
+        #submit{
+            background-color: rgba(255, 209, 124, 0.919);
+            margin-top: 40px;
+        }
+        #para1,#para2{
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="" method="dialog" target="_blank">
+    <!-- <form onsubmit=" return validate()"> -->
+        <fieldset>
+            <legend class="leg">Login Form</legend>
+
+            <div>
+                <label for="UserId">UserId :- </label> <br>
+                <input type="text" name="UserId" id="UserId" placeholder="Enter Your User'Id">
+                <p id="para1"></p>
+                <label for="password">Password :- </label> <br>
+                <input type="password" name="Password" id="password" placeholder="Enter Your Password">
+                <p id = "para2"></p>
+                <input type="reset" name="reset" id="submit">
+                <input type="submit" name="submit" id="submit">
+                
+                <p id="para3"></p>
+
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function validate(){
+            let u = document.getElementById("UserId");
+            let p = document.getElementById("password");
+
+            // if(u.value == "" && p.value == ""){
+            if(u.value == ""){
+                // alert("UserId cannot enter, Please Enter valid Id");
+                // console.log("UserId cannot enter, Please Enter valid Id");
+                document.getElementById("para1").textContent="User'Id cannot entered, Please Enter User'Id";
+                return false;
+            }
+            if(p.value == ""){
+                // alert("UserId cannot enter, Please Enter valid Id");
+                // console.log("UserId cannot enter, Please Enter valid Id");
+                document.getElementById("para2").textContent="Password cannot entered, Please Enter Password";
+                return false;
+            }
+            
+            if(u.value.length <3 || u.value.length >10){
+                document.getElementById("para1").innerHTML="User'Id enter min 3 and max 10";
+                return false;
+            }
+            if(p.value.length <3 || p.value.length >10){
+                document.getElementById("para2").innerHTML="Password enter min 3 and max 10";
+                return false;
+            }
+            
+            let UserId="Ashish";
+            let Password="12345";
+            if(u.value == UserId && p.value == Password){
+                alert("Successfull Login To Your Account");
+            }
+            if(u.value != UserId && p.value != Password){
+                alert("Enter valid UserI'd and Password");
+                // document.getElementById("para3").innerHTML="Enter valid UserId and Password";
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>

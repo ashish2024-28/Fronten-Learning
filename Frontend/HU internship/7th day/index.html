@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(105, 218, 142);
+        }
+
+        .p1 {
+            width: 200px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            /* position => relative (w.r.t page set possition) , static , sticky , fixed , absolute */
+            /* by default static */
+
+            /* position:relative  ;
+            left: 200px; */
+
+            /* position: sticky;
+            top: 0px; */
+
+            position: fixed;
+            /* bottom:  */
+
+        }
+        #p1{
+            top: 0px;
+            margin: 0;
+            z-index: 1;
+        }
+        #p2{
+            bottom: 0px;
+            margin: 0;
+        }
+
+        .outer {
+            /* border is a part of mode box  */
+            border: 3px solid yellow;
+            border-left: 3px solid rgb(39, 2, 250);
+            border-top: 3px solid rgb(241, 5, 194);
+            /* outline => border kay baad  and this is not part of model box */
+            outline: 3px dashed;
+            /* outlint-offset => space b/w border and outline */
+            outline-offset: 5px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 20px;
+
+
+        }
+
+        .inner {
+            border: 2px solid rgb(28, 186, 36);
+            width: 100px;
+            height: 150x;
+            position: absolute;
+            left: 25px;
+            overflow: auto;
+        }
+
+        .cont {
+            margin: 5px;
+            border: 2px solid;
+            height: 100px;
+            width: 200px;
+            /* Overflow property */
+            /* overflow : (x,y); =>  */
+            overflow: auto scroll;
+
+            /* float use to change position */
+            float: right;
+
+
+        }
+
+        .b2il {
+            border: 2px solid rgb(196, 5, 244);
+            display: inline;
+
+            /* display: none;  means remove space with content*/
+            /* display: none; */
+
+            /* visibility: hidden; mens remove but take space only hide  */
+            /* visibility: hidden; */
+            margin: 5px;
+
+        }
+
+        .il2b {
+            border: 2px solid rgb(252, 143, 0);
+            display: inline-block;
+        }
+
+        .ilnb {
+            border: 2px solid chocolate;
+            margin: 5px;
+
+        }
+
+        /* order list change to shape , image , 
+        any other languare like{ devnagari , alphabate , romon, .... } */
+        .ol {
+            border: 3px double rgb(10, 48, 216);
+            list-style-type: devanagari;
+            /* list-style-type: square; */
+            margin: 10px;
+
+
+        }
+
+        /* ulorder list change to shape , image , 
+        any other languare like{ devnagari , alphabate , romon, .... } */
+        .ul {
+            border: 3px double rgb(85, 24, 237);
+            list-style-type: square;
+            /* list-style-type: upper-roman; */
+        }
+
+        .imgl {
+            border: 3px double rgb(196, 5, 244);
+            list-style: inside "😊";
+
+        }
+
+        /* list-style-image: url(); */
+        /*list-style-type: none => means style(buller , numbers) are remove  */
+        /* use for nav link  */
+        .nav {
+            list-style-type: none;
+            display: flex;
+            display: inline;
+            float: right;
+        }
+
+        .nav li {
+            margin: 20px;
+            float: right;
+            list-style-type: none;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- position property -->
+    <p class="p1" id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste.
+    </p>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellendus id alias iusto totam vero,
+        aperiam sapiente maxime nam velit voluptates qui nisi quod suscipit quos ut autem architecto? Pariatur illo
+        eveniet corrupti atque saepe odio excepturi aspernatur itaque inventore, eaque id deserunt tempora minima
+        impedit at quasi deleniti dolores quibusdam sapiente voluptatem, numquam cum. Laboriosam sequi commodi veniam,
+        ut sapiente nam eligendi quaerat excepturi doloribus expedita vel veritatis velit, temporibus incidunt voluptas
+        porro quod. Vero, hic blanditiis cum quia id, odio ratione, ipsam eum iste rerum veniam? Ratione fugit
+        repellendus sunt dolor voluptatem suscipit similique! Repellendus, nihil consectetur est culpa rerum ad tempore
+        nemo assumenda pariatur sapiente eaque, quod excepturi corporis,
+    <p class="p1" id="p2"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste.
+    </p>
+    dicta esse ipsam illum. Illo fuga officia soluta quasi, voluptates eius vero, architecto animi accusantium, nemo
+    delectus reiciendis cum. Explicabo officia corrupti amet autem optio voluptatibus, dolorem iure repellat mollitia,
+    ut eligendi delectus! Odio quia id illum vitae quae adipisci dolorem, aliquid officiis fuga quas dolor vel
+    aspernatur eos provident laudantium sint ducimus at blanditiis doloremque iste! Minus debitis dolore impedit.
+    Maiores sit, repellat minus provident consequuntur illo ea neque perspiciatis autem quidem molestias blanditiis qui
+    at veritatis eum cupiditate vel sequi. Ipsa magnam dicta eum cupiditate nesciunt debitis. Natus officia praesentium,
+    fugit vitae facilis exercitationem cumque minus veniam maiores sint et, voluptates nisi laborum magni in distinctio
+    amet provident rem harum vel, laboriosam eligendi soluta? Ipsum inventore rem sequi mollitia obcaecati debitis ipsam
+    aut fugiat vero optio, fugit incidunt molestiae maxime corrupti nostrum amet asperiores voluptatum nobis impedit
+    minus est ratione libero, eaque quibusdam. Iure illo sequi labore. Asperiores, rerum repellendus! Omnis rem sunt,
+    repellendus corrupti molestias ipsum iure voluptates pariatur! Quidem ratione, magni laborum qui praesentium hic
+    necessitatibus, quo cupiditate sed fuga odio velit exercitationem? Veniam, atque nam. Suscipit officiis molestiae
+    perspiciatis deleniti. Dolores officiis numquam sunt vitae maiores, deleniti dolore aliquam qui explicabo! Est
+    asperiores rem voluptatibus. Aliquid sit amet, distinctio eveniet dolores molestiae ullam nostrum, natus ab quaerat
+    suscipit dignissimos veritatis vitae nisi eos! Modi, dolor. Laudantium laborum consectetur voluptates facere sint
+    illo inventore laboriosam aliquid, doloribus animi fuga eaque velit cum quo culpa alias nihil ducimus dolor ex
+    maiores nobis dolores excepturi consequuntur. Optio aperiam quaerat labore, iure quidem illum facere eum consequatur
+    atque voluptates officiis autem repellat? Nulla tenetur quibusdam molestias tempora libero in, fuga tempore dolorem
+    alias atque soluta voluptates error rerum animi magnam, corporis sit omnis eligendi enim. Similique soluta
+    temporibus nihil sapiente officia eveniet eligendi perspiciatis quasi ea exercitationem error quisquam ullam
+    inventore, nulla natus harum, laborum deleniti labore odio omnis! Explicabo, laudantium voluptatum blanditiis error,
+    ipsa quod asperiores sit delectus minus nobis incidunt aperiam quo cum consequuntur vel ullam veritatis
+    necessitatibus amet illo? Eveniet distinctio quasi ratione obcaecati doloribus assumenda, ducimus pariatur rerum
+    sapiente cupiditate accusantium nisi at, accusamus odit minima omnis fugit odio nam quae eligendi reprehenderit
+    dolor. Nisi necessitatibus in eveniet reiciendis, eligendi minima. Assumenda similique libero consequuntur eaque
+    reiciendis quas tempora magni voluptas, voluptatum laborum maxime rerum debitis tenetur laboriosam harum ut earum.
+    Eius, omnis!
+    </p>
+
+    <div class="outer">
+        Lorem ipsum, dolor sit amet
+        <div class="inner">
+            rerum illum voluptate autem repellat cum consequuntur voluptatum
+
+        </div>
+    </div>
+
+
+    <div class="cont">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, repudiandae. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Ipsum numquam autem quae, molestias qui eius dignissimos nesciunt ab natus
+            maiores repellendus, a saepe voluptates, totam consequuntur at repudiandae molestiae reiciendis.
+        </p>
+    </div>
+
+    <!-- display property -->
+    <p class="b2il"> paragraph is blok element </p>
+    <p class="b2il">using display change block to inline</p>
+
+    <!--  inline to block -->
+    <span class="il2b"> span is inline element </span>
+    <span class="il2b">using display change inline to block</span>
+
+    <!-- inline and block both -->
+    <p class="ilnb"> paragraph is blok element </p>
+    <span class="ilnb"> (span) using display change to inline and also block</span>
+
+    <!-- order list ka  -->
+    <ol class="ol">
+        <li>
+            html
+        </li>
+        <li>
+            css
+        </li>
+    </ol>
+
+    <!-- ulorder list ka  -->
+    <ul class="ul">
+        <li>
+            html
+        </li>
+        <li>
+            css
+        </li>
+    </ul>
+    <!-- list position inside-->
+
+    <!-- img or emojy in a -->
+    <ul class="imgl">
+        <li>
+            html
+        </li>
+        <li>
+            css
+        </li>
+    </ul>
+
+    <ol type="A" start="4">
+        <li>
+            html
+        </li>
+        <li>
+            css
+        </li>
+    </ol>
+
+    <!-- nav link -->
+    <ol class="nav">
+        <li>
+            <a href="">home</a>
+        </li>
+        <li>
+            <a href="">Contact</a>
+        </li>
+    </ol>
+
+
+
+</body>
+
+</html>

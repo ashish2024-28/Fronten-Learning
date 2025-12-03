@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+
+    <style>
+        /* bootstrap  */
+        /* insplash */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            background-color: rgb(110, 106, 106);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .nav {
+            /* border-bottom: 2px solid rgb(140, 137, 137); */
+            width: 99vw;
+            height: 3vw;
+        }
+
+        .nf {
+            display: flex;
+            column-gap: 15px;
+            list-style: none;
+            margin-top: 10px;
+            font-size: small;
+
+
+        }
+
+        .nf a {
+
+            text-decoration: none;
+        }
+
+        /* .bk { */
+        /* margin:5vw 0vw 0vh 0vw ; */
+        /* padding: 0px 20px 0px 5px;
+            border-left: 2px solid gray;
+            position: relative;
+            bottom: 1vh;
+
+
+        } */
+        .first {
+            padding-left: 5vw;
+        }
+
+        .last {
+            padding-left: 20vw;
+        }
+
+        .logo {
+            color: white;
+            font-family: monospace;
+            font-size: 80px;
+            text-align: center;
+            position: relative;
+            padding: 40px 0vw 3vw 0vw;
+            /* top: 18vw; */
+
+        }
+
+        .searchbar {
+            padding: 12px;
+            background-color: white;
+            border-radius: 50px;
+            width: 55vw;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            margin-left: 20vw;
+            height: 4vw;
+
+
+        }
+
+
+        #search {
+            padding: 12px;
+            border-radius: 30px;
+            width: 50vw;
+            border: 2px solid white;
+        }
+        .camera{
+            width: 50px;
+        }
+
+        /* 5 to 9 day tak ka test */
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="nav">
+            <nav>
+                <ul class="nf">
+                    <li>
+                        <a class="first nl" href="//about">About</a>
+                    </li>
+                    <li>
+                        <a class=" nl " href="//store">Store</a>
+                    </li>
+
+                    <li>
+                        <a class="nl last" href="//searchlab"></a>
+                    </li>
+                    <li>
+                        <a class="nl " href="//gmail">Gmail</a>
+                    </li>
+                    <li>
+                        <a class="nl " href="//image">Image</a>
+                    </li>
+                    <!-- <li>
+                        <a class="nl " href="">🧰 All Bookmarks</a>
+                    </li> -->
+                    <li>
+                        <a href=""><img class="nl " height="30px" src="lab.png" alt="Search lab"></a>
+                    </li>
+                    <li>
+                        <a href=""><img class="nl " height="25px" src="app iconwebp.webp" alt="app icon"></a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="logo"> Google </div>
+        <div class="searchbar">
+            <label for="search">
+                            <i class="bi bi-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg> </i>
+            </label>
+            <input type="search" name="search" id="search" placeholder=" Search Google ">
+            <label for="search">
+            <svg  class="camera" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera"
+                viewBox="0 0 16 16">
+                <path
+                    d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+                <path
+                    d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+            </svg>
+            </label>
+
+        </div>
+    </div>
+</body>
+
+</html>

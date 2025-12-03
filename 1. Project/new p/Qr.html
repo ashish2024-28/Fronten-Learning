@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR with CAPTCHA</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <h2>QR Code with CAPTCHA</h2>
+  <canvas id="qrcode"></canvas>
+  <p id="captcha"></p>
+
+  <script>
+    // Step 1: CAPTCHA generator
+    function generateCaptcha(length = 5) {
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+      let captcha = "";
+      for (let i = 0; i < length; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return captcha;
+    }
+
+    // Step 2: Generate captcha
+    const captchaText = generateCaptcha();
+    document.getElementById("captcha").innerText = "Generated CAPTCHA: " + captchaText;
+
+    // Step 3: Create QR with CAPTCHA text
+    QRCode.toCanvas(document.getElementById("qrcode"), "CAPTCHA:" + captchaText, function (error) {
+      if (error) console.error(error);
+      console.log("QR with CAPTCHA generated!");
+    });
+  </script>
+</body>
+</html>

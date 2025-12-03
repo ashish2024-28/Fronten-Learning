@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <img width="220px" id="Bulbimg" src="OFF.png" alt=""> <br>
+        <button onclick="toggleBulb()" >ON OFF Button</button>
+        
+    <script >
+        
+let isOn = false;
+function toggleBulb(){
+    const Bulbimg = document.getElementById("Bulbimg");
+    
+    if(isOn){
+        
+        Bulbimg.src = "OFF.png";
+    }
+    else{
+        // document.getElementById("Bulbimg").src = "OFF.png",width = "200px";
+        Bulbimg.src = "images.jpeg";
+    }
+    isOn == !isOn;
+
+}
+
+
+
+
+    </script>
+</body>
+</html>

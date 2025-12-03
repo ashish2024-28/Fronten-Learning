@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para" onmouseover="style.backgroundColor ='red'"
+     onmouseout="style.backgroundColor ='yellow'"> 
+     code in paragrapg <br>
+        <code>
+
+            &lt; body> <br>
+    &lt; p id="para" > code in paragrapg <br>
+        &lt; code> 
+            
+            <br> code  <br>
+            
+
+
+        &lt; /code> <br>
+
+    &lt; /p> <br>
+
+    &lt; button onclick="show()">click for hide/unhide(show)&lt; /button> <br> <br>
+
+    &lt; script> <br>
+        function show(){ <br>
+            let p = document.getElementById("para"); <br>
+            if(p.style.display=='none'){ <br>
+                p.style.display = "block"; <br>
+            } <br>
+            else{ <br>
+                p.style.display = "none"; <br>
+            } <br>
+        } <br>
+        
+        &lt; /script> <br> <br>
+
+        &lt; /body>
+
+        </code>
+    </p>
+    <button onclick="show()">click for hide/unhide(show)</button>
+    <script>
+
+        const d = document.getElementById("para");
+        d.addEventListener('mouseover',function(){
+            d.style.color="blue";
+        });
+
+        function show() {
+            let p = document.getElementById("para");
+            if (p.style.display == 'none') {
+                p.style.display = "block";
+            }
+            else {
+                p.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        * {
+            /* background-color: rgb(70, 185, 147); */
+            /* background-color: black; */
+        
+
+            font-size: 13px;          
+            
+        }
+        .b1{
+            display: flex;
+        }
+        .PD{
+            font-size: x-large;
+        }
+        .hw{
+            /* border: 1px solid; */
+            align-self: center;
+            margin-left: 20px;
+            font-size: x-large;
+        }
+        
+        
+        .suh1{
+            justify-self: center;
+            margin-left:20% ;
+            margin-top: -20px;
+        }
+        .suh2{
+            justify-self: flex-start;
+            margin-top: -20px;
+            margin-left: 5px;
+        }
+       .RS{
+        justify-self: center;
+       }
+
+    </style>
+</head>
+<!-- how to add capta code -->
+<!-- 2 dout line 64,93,108 -->
+<body>
+    <div class="b1" >
+        <img width="100px" height="100" src="https://upload.wikimedia.org/wikipedia/en/3/3d/Haridwar_University_logo.png" alt="HU logo"> 
+        <div>
+            <h1 class="hw" >HARIDWAR UNIVERSITY, ROORKEE</h1>
+            <h6 class="suh1">(Set up by an Act of Govt. of Uttarakhand)</h6>
+            <h6 class="suh2">A University U/s 2(f) of the UGC act 1956 with the right to confer degree U/s 22(1) of the UGC Act</h6>
+        </div>
+    </div>
+        <div>
+        <h3> <u> ENROLMENT FORM </u></h3>
+    </div>
+
+    <!-- form => button,fieldset,input,lable,meter,
+                    object,output,select,textarea -->
+    <form action="" method="post">
+        <div >
+            <div class="box1">
+    <!-- input type text ya tel -->
+                <label for="Application No.">Application No. :- </label>
+                <input type="number" name="Application NO." placeholder="Enter Application Number" id="Application No.">
+                <br>
+                <label for="Enrollment NO.">Enrollment No. :- </label>
+                <input type="text" name="Enrollment NO." placeholder="Enter Enrollment Number" id="Enrollment NO."
+                    required autofocus> <br>
+
+                <label for="CourseName"> Course Name :- </label>
+                <input type="text" name="Course Name" id="CourseName" placeholder="Enter Course Name" required> <br>
+                <label for="BranchName"> Branch Name :- </label>
+                <input type="text" name="Branch Name" id="BranchName" placeholder="Enter Branch Name" required> <br>
+
+                <div class="a">
+                    <nav class="sem">
+                        <label for="sem"> Semester :- </label>
+                        <input type="number" name="Semester" id="sem" min="1" max="8" required placeholder=" Sem"> <br>
+                    </nav>
+                    <nav>
+
+
+                        <label for="year"> Year :- </label required>
+                        <select required >
+                            <option value="">1st Year</option>
+                            <option value="">2nd Year</option>
+                            <option value="">3nd Year</option>
+                            <option value="">4nd Year</option>
+                        </select>
+
+         <!-- what do to checkbox any one -->
+                        <!-- <label for="year">Year :- </label  required >
+            <input type="checkbox" name="checkbox" id="cb1">
+            <label for="cb1">1st </label>
+            <input type="checkbox" name="checkbox" id="cb2">
+            <label for="cb2">2nd </label>
+            <input type="checkbox" name="checkbox" id="cb3">
+            <label for="cb3">3st </label>
+            <input type="checkbox" name="checkbox" id="cb4">
+            <label for="cb4">4st </label> -->
+                    </nav>
+                </div>
+
+            </div>
+            <div class="img" aria-required="true" title="Upload Current Photo" >
+<!--Doubt any file or any img ko post kanay kay baad automatic open ho sakta hai and 
+how to add * mark that show on top of any elements-->
+
+                <input type="file" name="" id="img">
+            </div>
+        </div>
+
+
+
+        <hr>
+
+        <div class="PD">
+             <h2> <u>Personal Details</u> </h2> <br>
+
+
+            <label for="SName"> Student Name (In Caps) :- </label required>
+            <input type="text" name="StudentName" id="SName" placeholder="Enter Full Name" required autofocus
+                aria-checked="true"><br>
+            <label for="SNameH"> Student Name (In Hindi) :- </label required>
+            <input type="text" name="StudentName" id="SNameH" placeholder="अपना  नाम दर्ज करें" required> <br>
+            <label for="SEid"> Student's Email-ID :- </label required>
+            <input type="email" name="Email" id="SEid" placeholder="Enter Personal Email id"><br>
+            <label for="FName"> Father's Name :- </label>
+            <input type="text" name="FatherName" id="FName" placeholder="Enter Father Name" required> <br>
+            <label for="MName"> Mother's Name :- </label>
+            <input type="text" name="MotherName" id="MName" placeholder="Enter Mother Name" required> <br>
+            <label for="MobileNo"> Mobile No. :- </label>
+            <input type="tel" name="MobileNo." id="MobileNo" placeholder="Enter Personal Mobile Number" required> <br>
+            <span> <label for="dob">D.O.B :- </label>
+                <input type="date" name="DOB" id="dob" required> </span>
+            <span> <label for=""> Gender :- </label>
+                <input type="radio" name="Gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="Female">
+                <label for="Female">Female</label> <br>
+            </span>
+            <!-- input type text or tel  -->
+            <label for="ACNO">Aadhar Card No. :- </label required>
+            <input type="tel" name="AadharNo" id="ACNO" placeholder="Enter Aadhar Number"> <br>
+            <label for="ABCID">Academic Bank Credit ID :- </label>
+            <input type="text" id="ABCID" placeholder="Academic Bank Credit ID"> <br>
+            <label for="address">Address :- </label>
+            <input type="text" name="Address" id="address" placeholder="Enter Address">
+            <label for="Pincode">Pincode</label>
+            <input type="tel" name="Pincode" id="Pincode" placeholder="Enter Pincode">
+        </div>
+        <div class="table">
+            <table class="table">
+                <caption> <h2> <u>Academic qualification</u> </h2></caption>
+                <tr>
+                    <th>Certificate/Degree </th>
+                    <th>Boards/University</th>
+                    <th>Year Of Passing</th>
+                    <th>Subjects</th>
+                    <th>Total Marks</th>
+                    <th>Obtained Marks</th>
+                    <th>% age</th>
+                </tr>
+                <tr>
+                    <td> <!-- </label><input type="text" name="Degree" id="Degree" placeholder="Enter Degree"> -->
+                        <b>10 <sup>th</sup></b>
+                    </td>
+                    <td>
+                        <input type="text" name="Boards" id="Boards" placeholder="Enter Boards/University">
+                    </td>
+                    <td>
+                        <input type="number" name="session" id="session" placeholder="Enter Year Of Passing">
+                    </td>
+                    <td>
+                        <input type="text" name="Subject" id="Subject" placeholder="Enter All Subjects">
+                    </td>
+                    <td>
+                        <input type="number" name="Total Marks" id="TotalMarks" placeholder="Enter Total Marks">
+                    </td>
+                    <td>
+                        <input type="number" name="Obtained Marks" id="ObtainedMarks"
+                            placeholder="Enter Obtained Marks">
+                    </td>
+                    <td>
+                        <input type="number" name="% age" id="%age" placeholder="Enter % age">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <!-- </label><input type="text" name="Degree" id="Degree" placeholder="Enter Degree"> -->
+                        <b>12 <sup>th</sup></b>
+                    </td>
+                    <td>
+                        <input type="text" name="Boards" id="Boards" placeholder="Enter Boards/University">
+                    </td>
+                    <td>
+                        <input type="number" name="session" id="session" placeholder="Enter Year Of Passing">
+                    </td>
+                    <td>
+                        <input type="text" name="Subject" id="Subject" placeholder="Enter All Subjects">
+                    </td>
+                    <td>
+                        <input type="number" name="Total Marks" id="TotalMarks" placeholder="Enter Total Marks">
+                    </td>
+                    <td>
+                        <input type="number" name="Obtained Marks" id="ObtainedMarks"
+                            placeholder="Enter Obtained Marks">
+                    </td>
+                    <td>
+                        <input type="number" name="% age" id="%age" placeholder="Enter % age">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <!-- </label><input type="text" name="Degree" id="Degree" placeholder="Enter Degree"> -->
+                        <b>Graduation</b>
+                    </td>
+                    <td>
+                        <input type="text" name="Boards" id="Boards" placeholder="Enter Boards/University">
+                    </td>
+                    <td>
+                        <input type="number" name="session" id="session" placeholder="Enter Year Of Passing">
+                    </td>
+                    <td>
+                        <input type="text" name="Subject" id="Subject" placeholder="Enter All Subjects">
+                    </td>
+                    <td>
+                        <input type="number" name="Total Marks" id="TotalMarks" placeholder="Enter Total Marks">
+                    </td>
+                    <td>
+                        <input type="number" name="Obtained Marks" id="ObtainedMarks"
+                            placeholder="Enter Obtained Marks">
+                    </td>
+                    <td>
+                        <input type="number" name="% age" id="%age" placeholder="Enter % age">
+                    </td>
+                </tr>
+            </table>
+        </div>
+            <br>
+            <input type="checkbox" id="chbk" >
+            <label for="chbk">Check all the details, whether you have filled them correctly</label> <br><br>
+            <div class="RS">
+                <input type="reset" name="reset" id="reset">
+                <!-- <label for="submit"> Submit </label> -->
+                 <!-- <input type="image"  > -->
+                <input type="submit" id="submit">
+            </div>
+    </form>
+
+</body>
+
+</html>

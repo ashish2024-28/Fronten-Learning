@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap:4px ;
+            grid-row-gap: 4px;
+        }
+        .box1{
+            border:1px solid red;
+        }
+        .box2{
+            border:1px solid blue;
+        }
+         .box3{
+            border:1px solid green;
+        }
+         .box4{
+            border:1px solid yellowgreen;
+        }
+
+        @media screen and (max-width:1000px) 
+        {
+          .outer{display:grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 4px 4px;
+        }
+        }
+
+           @media screen and (max-width:768px) 
+        {
+          .outer{
+            display:grid;
+          grid-template-columns: 1fr;
+          grid-gap: 4px 4px;
+        }}
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+    <div class="box1">HTML</div>
+    <div class="box2">CSS</div>
+    <div class="box3">JS</div>
+    <div class="box4">Python</div>
+    </div>
+</body>
+</html>

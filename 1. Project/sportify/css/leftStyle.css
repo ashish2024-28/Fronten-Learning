@@ -1,0 +1,59 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+     background-color: black;
+    color: white; 
+}
+/* left box style */
+
+.left{
+    width: 25vw;
+    border: 2px solid red;
+    margin: 3px;
+}
+.home{
+    padding: 5px;
+}
+.home ul li{
+    width: 25px;
+    gap: 15px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.HmSeIcon{
+    margin-left: 2px;
+}
+.Search{
+/* use  js for search  */
+    opacity: .5;
+}
+.library{
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+}
+.YrLb{
+    display: inline-block;
+    font-size: 21px;
+}
+.songList{
+    padding: 10px 15px;
+    overflow:auto;
+}
+.songList li{
+    list-style-type:"♪";
+    padding: 5px 10px;
+    opacity: 0.7;
+    color: white;
+}
+.songList li:hover{
+    opacity: 1;
+}
+.songList button{
+    font-size: 17px;
+    padding: 5px 0px;
+    border: none;
+    background-color: #121212;
+}

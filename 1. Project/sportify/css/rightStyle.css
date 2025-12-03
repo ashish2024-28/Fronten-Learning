@@ -1,0 +1,118 @@
+/* right box here music style */
+
+.right{
+    /* position: relative; */
+    width: 75vw;
+    border: 2px solid red;
+    margin: 3px;
+}
+.gtltBtn{
+    margin-left: 15px ;
+}
+.gtBtn,.ltBtn{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    opacity: .5;
+}
+.signbtn{
+    color: white;
+    font-size: 13px;
+    opacity: .8;
+}
+.Loginbtn{
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 15px 20px;
+}
+.SpyPlsH1{
+    margin: 30px;
+    color: rebeccapurple;
+}
+.PlayList{
+    background-color: black;
+}
+.MusicGrid{
+    /* display: grid; */
+    /* grid not use because it not make responsive */
+    /* display: flex;  */ /* use to class flex */
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5,1fr) ; */
+    margin: auto;
+    border-radius: 20px;
+    width: 90%;
+    padding: 10px;
+}
+.Music{
+    margin: 5px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+    border-radius: 5px;
+}
+.Music h2,p{
+    text-align: left;
+    margin: 8px 13px ;
+    overflow:hidden;
+}
+.albmImg{
+    height: 220px;
+    width: 230px;
+    object-fit:cover;
+    object-position: center 20% ;
+    padding-top: 15px;
+}
+.Music{
+    position: relative;
+}
+.PlayBtn{
+    position: absolute;
+    bottom: 120px;
+    right: 13px;
+    width: 35px;
+    height: 35px;
+    background-color: #1f1f1f;
+    border-radius: 50px;
+    display: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+.pplay{
+    padding: 7px 0px 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+/* here Play music when you select */
+
+#AllMusicPlay {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    /* display: none; */
+    border-radius: 10px;
+}
+#AllMusicPlay button{
+    font-size: 25px;
+}
+#AMPlay{
+    display: none;
+}
+.PPN{
+    /* display: inline-block; */
+    gap: 30px;
+}
+.seekbar{
+    /* margin-top: 5px; */
+    margin: auto;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+}
+.circle{
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}

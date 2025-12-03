@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    /* position:relative because for box1 and 
+    box 6 are position:absolute then it consider
+    box as parent
+    if not relative the parent is html */
+    position:relative ;
+    margin: 10px;
+    border: 2px solid;
+    padding: 10px;
+
+}
+.Box{
+    border: 2px solid black;
+    height: 133px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px;
+}
+.box1{
+    background-color: rgb(221, 255, 0);
+    position: sticky;
+    top: 0px;
+    left: 150px;
+    z-index: 2;
+}
+.box2{
+    background-color: red;
+    position: relative;
+    /* position: absolute ; */
+    top:-50px ;
+    z-index: -1;
+    
+}.box3{
+    background-color: rgb(231, 148, 148);
+}.box4{
+    background-color: green;
+}
+.box5{
+    background-color: rgb(128, 198, 62);
+}
+.box6{
+    background-color: rgb(199, 107, 32);
+     position: relative;
+     position: absolute ;
+     left: 100px;
+     top: 400px ;
+     z-index: 1;
+     /* position: sticky; */
+}
+.box7{
+    background-color: rgb(104, 209, 222);
+}.box8{
+    background-color: rgb(113, 77, 197);
+}
+
+.c1{
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0px;
+    left: 80vw;
+    background-color: yellow;
+    text-align: center;
+}
+.c2{
+     border: 2px solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0px;
+    background-color:aqua ;
+    text-align: center;
+}

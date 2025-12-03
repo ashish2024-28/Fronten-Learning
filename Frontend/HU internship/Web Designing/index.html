@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designing</title>
+</head>
+<body>
+    <!--Heading Tags-->
+    <h1>Learning HTML</h1>
+    <h2>Learning HTML</h2>
+    <h3>Learning HTML</h3>
+    <h4>Learning HTML</h4>
+    <h5>Learning HTML</h5>
+    <h6>Learning HTML</h6>
+
+    <!--Paragraph Tag-->
+    <p>Hypertext Markup Language (HTML) is the standard markup language
+     for documents designed to be displayed in a web browser. It defines the 
+     content and structure of web content. It is often assisted by technologies 
+     such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript,
+     a programming language.</p><br><hr>
+
+     <!--Image Tag-->
+     <img src="images (1).jpeg" height="100px" width="200px" alt="image of an island"><br>
+     
+     <!-- Text Formatting Tags-->
+     <b>HTML</b><br>
+     <i>HTML</i><br>
+     <u>HTML</u><br>
+     <mark>HTML</mark><br>
+     <strong>HTML</strong><br>
+     <em>HTML</em><br>
+     <del>Hello</del> <ins>Hii</ins> <br>
+     <small>HTML</small><br>
+      H<sub>2</sub>O <br>
+      x<sup>3</sup><br>
+
+    <!--Bidirectional Override-->
+    <bdo dir="rtl">This is a paragraph</bdo><br>
+
+    <!--Quote-->
+    <q>Hardwork is the key to success.</q><br>
+
+    <!--Linking-->
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!--Lists-->
+    <ol>
+        <li>Pencil</li>
+        <li>Pen</li>
+        <li>Notebook</li>
+        <li>Eraser</li>
+    </ol>
+
+    <ul>
+        <li>Pencil</li>
+        <li>Pen</li>
+        <li>Notebook</li>
+        <li>Eraser</li>
+    </ul>
+
+    <dl>
+        <dt>Tea</dt>
+        <dd>Hot Drink</dd>
+        <dt>Coffee</dt>
+        <dd>Cold Drink</dd>
+    </dl>
+
+<!--Abbreviation-->
+<p><abbr title = "Uniform Resource Locator">URL</abbr></p>
+
+<!--Address-->
+<address>
+    Haridwar University<br>
+    Upper Canal Road<br>
+    Roorkee
+</address>
+
+<a href="https://www.amazon.in/"><img src="download.png"></a>
+
+<!--Tables-->
+<table>
+    <caption>Student Data</caption>
+    <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>Ram</td>
+        <td>CSE</td>
+        <td>Pune</td>
+    </tr>
+    <tr>
+        <td>Shyam</td>
+        <td>IT</td>
+        <td>Haridwar</td>
+    </tr>
+    <tr>
+        <td>Rahul</td>
+        <td>MCA</td>
+        <td>Dehradun</td>
+    </tr>
+</table><br>
+
+<table>
+    <caption>Student Data</caption>
+    <tr>
+        <th colspan="2">Name</th>
+        
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>Ram</td>
+        <td>Sharma</td>
+        <td>Pune</td>
+    </tr>
+    <tr>
+        <td>Shyam</td>
+        <td>Verma</td>
+        <td>Haridwar</td>
+    </tr>
+    <tr>
+        <td>Rahul</td>
+        <td>Gupta</td>
+        <td>Dehradun</td>
+    </tr>
+</table><br>
+
+<table>
+    <caption>Student Data</caption>
+    <tr>
+        <th rowspan="2">Name</th>
+        <td>Ram</td>
+        <td>Shyam</td>
+        <td>Rahul</td>
+        
+    </tr>
+    <tr>
+        
+        <td>Sharma</td>
+        <td>Verma</td>
+        <td>Gupta</td>
+    </tr>
+    <tr>
+        <th>City</th>
+        <td>Pune</td>
+        <td>Haridwar</td>
+        <td>Dehradun</td>
+    </tr>
+</table><br>
+
+<!--Video-->
+<video height = "200px" width = "200px" controls 
+autoplay loop muted>
+    <source src ="LG.mp4" type="video/mp4">
+</video><br>
+
+<!--Audio-->
+<audio height = "200px" width = "200px" controls>
+    <source src ="AI.mp4" type="audio/mp4">
+</audio><br>
+
+<!--Iframes-->
+<iframe src="project.html" name = "frame">
+    </iframe><br><br>
+<a href="demo.html" target = "frame">Go here</a>
+
+<!--preformatted tag-->
+<pre>
+    Hello
+     how are you?
+    We are learning Web Designing
+</pre>
+
+<p>
+    Hello
+    how are you?
+    We are learning Web Designing
+</p>
+
+<!--Block elements vs Inline elements-->
+<div style="height: 200px; width: 100px;">hello</div>
+
+<p>hello.how are &nbsp; &nbsp;&nbsp;&nbsp;your <span style="height: 100px ; width: 100px;">Internship</span>classes going on?</p>
+<p>hiii</p>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bzwD7vfQJCA?si=MWOo8zW8EWqtrE2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+<!--Forms-->
+<form action="submission.html" >
+  <label for="text">First_Name</label>
+  <input type ="text" value = "Anubha" disabled placeholder="Enter your first name" maxlength="4" required><br><br>
+  <label for="text">Last_Name</label>
+  <input type ="text" value="Gupta" readonly autofocus size = "50" required><br><br>
+  <label for="radio">Gender</label>
+  <input type="radio" name="gender" checked>Male
+  <input type="radio" name="gender">Female<br><br>
+  <label for="checkbox">Languages Known</label>
+  <input type="checkbox" name="hindi">Hindi
+  <input type="checkbox" name="english">English
+  <input type="checkbox" name="punjabi">Punjabi<br><br>
+  <label for="drop">City</label>
+  <select>
+    <option>Pune</option>
+    <option>Chandigarh</option>
+    <option>Punjab</option>
+    <option>Delhi</option>
+    <option>Dehradun</option>
+  </select><br><br>
+  <input type="checkbox"> I agree to the terms and conditions.<br><br>
+  <label for="pass">Enter password</label>
+  <input type="password" title=" password should contain atleast one capital letter,small letter
+   and digit"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br><br>
+
+<input type="color"><br><br>
+<input type="date"><br><br>
+<input type="datetime-local"><br><br>
+<input type="email"><br><br>
+<input type="file"><br><br>
+<input type="month"><br><br>
+<input type="time"><br><br>
+<input type="url"><br><br>
+<input type="number" min="1" max="20">
+<input type="range"><br><br>
+<input type="reset"><br><br>
+<textarea rows="5" cols="10"></textarea>
+<input type="submit" value="Register"><br><br>
+</form>
+
+</body>
+</html>

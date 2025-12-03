@@ -1,0 +1,65 @@
+nav h2 {
+    text-align: center;
+    text-shadow: 2px 3px 4px black;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+
+}
+
+.olsd {
+    list-style-type: devanagari;
+
+    background-color: rgb(254, 246, 6);
+    border: 2px solid red;
+    /* list-style-position:inside; */
+}
+
+.olsn {
+    list-style-type: none;
+    background-color: rgb(254, 246, 6);
+    border: 2px solid red;
+    list-style-position: inside;
+}
+
+.olimg {
+    list-style-image: url(61JOQrUB8sL.jpg);
+    background-color: rgb(254, 246, 6);
+    border: 2px solid red;
+    list-style-position: inside;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    background-color: rgb(254, 246, 6);
+    border: 2px solid red;
+    /* list-style-position: inside; */
+}
+.nav li{
+    padding: 20px;
+}
+
+
+.ULSD {
+    list-style-type: devanagari;
+}
+
+.Emoji {
+    /*1  list-style: devanagari; */
+
+    /* 1 */
+    list-style-type: "😂";
+    /* use order in any language */
+    background-color: yellow;
+    /* background color but not order background color
+    so use list-style-position  to bkcolor*/
+
+    /* 2 */
+    list-style-position: inside;
+    /* 1(any one at time , 2 REPLACE OR DIRECT */
+    list-style: inside "😂";
+
+    border: 2px solid black;
+
+}

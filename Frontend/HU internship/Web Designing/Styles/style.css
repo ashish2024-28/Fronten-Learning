@@ -1,0 +1,116 @@
+/* Element Selector */
+/* p{
+    border:2px solid blue;
+    border-radius: 60px 10px 60px 10px;
+    height:200px;
+    width:800px;
+     
+    /* background-color: lightblue;
+    background-image: url("bird.png");
+    background-repeat: no-repeat;
+    background-position:top right;
+    background-attachment:fixed ; */
+} */
+
+/* ID Selector */
+#para{
+    /* background-color: blueviolet; */
+    /* color:white; */
+    text-align:justify;
+    text-decoration:underline;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 25px;
+    text-indent: 30px;
+    /* text-transform:uppercase; */
+    /* text-shadow: -5px -10px 3px red; */
+    /* box-shadow: 20px 30px 50px goldenrod inset; */
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    padding:  0px 15px 5px;
+    /* margin:20px; */
+}
+
+/* Class Selector */
+.abc{
+    border:2px solid brown;
+    background-color: chartreuse;
+   
+}
+a{
+    text-decoration: none;
+}
+
+/* Universal Selector */
+/* *{
+    text-align:center;
+} */
+
+/* Group Selector */
+table,td,th{
+    border:2px dashed blueviolet;
+    border-collapse: collapse;
+    padding: 4px;
+    text-align: center;
+}
+
+#para1{
+    width:200px;
+    border:2px solid red;
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    font-weight: 400px;
+    background-color: lightskyblue;
+}
+
+#outer{
+    border:1px solid red;
+    height:200px;
+    width:300px;
+    position: relative;
+}
+
+#inner{
+    border:1px solid red;
+    height:100px;
+    width:150px;
+    position:absolute;
+    left:30px;
+    top:40px;
+}
+
+.container{
+    border-left:3px solid blue;
+    border-bottom:2px solid green;
+    outline:4px dotted red;
+    outline-offset: 5px;
+    height:100px;
+    width:200px;
+    overflow: scroll;
+    /* float:right; */
+}
+
+p{
+   /* visibility:hidden; */
+   display: none;
+}
+
+span{
+    display: inline-block;
+}
+
+ul{
+    list-style-type:square;
+}
+
+ol{
+    /* list-style-type: upper-roman;
+    list-style-position: inside;
+    list-style-image: url("bird.png"); */
+    list-style-type:none;
+     
+}

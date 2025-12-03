@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and position</title>
+    <style>
+        .container{
+            height: 699px;
+            width: 688px;
+            border: 2px solid purple;
+            background-color: aqua;
+
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .img3{
+            width: 200px;
+            height:225px;
+            border: 2px solid yellow;
+            background-position: 50% 50%;
+            background-repeat:no-repeat;
+            background-image: url("61JOQrUB8sL.jpg"); 
+        }
+        .img1{
+            width: 200px;
+            height:225px;
+            border: 2px solid yellow;
+        /* object-fit:cover => image ko cut ya kayse ve
+         adjudt in width and height  */
+
+            object-fit:cover;
+            /* object-position: top ; */
+            object-position: 5px 5px ;
+             
+        }
+        .img2{
+            width: 200px;
+            height:225px;
+            border: 2px solid yellow;
+        /* object-fit:contain => image auto
+         adjudt in width and height  */
+         object-fit: contain;
+
+         /* auto adjust */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="d:\Coding\Web Dev\HU internship\1st day\61JOQrUB8sL.jpg" alt="maharaj ji"> -->
+         <figure>
+            <img class="img1" src="61JOQrUB8sL.jpg" alt="">
+            <figcaption>
+         <h3>object-fit: cover;<br>
+            object-position: top; or<br>
+            object-position: 5px 5px ;
+        </h3>
+
+            </figcaption>
+         </figure>
+        <figure>
+            <img class="img2" src="61JOQrUB8sL.jpg" alt="">
+            <figcaption>
+         <h3>object-fit: contain;</h3>     
+            </figcaption>
+        </figure>
+
+        <div class="img3"> </div>
+        <h3>background-repeat:no-repeat; <br>
+            background-position: 50% 50%; <br>
+            background-image: url("");</h3>
+    </div>
+</body>
+</html>
