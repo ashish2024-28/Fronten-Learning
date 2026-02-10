@@ -79,7 +79,7 @@ function Basic4(){
     </select> <br />
 
     <button  onClick={greet}>Submit</button>
-    <button  onClick={reset}>Reset</button>
+    <button  onClick={reset}>Reset</button> <br /><hr />
 
         </>
     );
