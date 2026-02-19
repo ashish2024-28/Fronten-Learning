@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function Basic2(){
     const [name, setName] = useState("radha");
     return(<>

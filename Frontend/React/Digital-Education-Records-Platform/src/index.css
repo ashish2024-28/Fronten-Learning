@@ -1,3 +1,6 @@
+
+
+
 /* ======================
    BASE
 ====================== */
@@ -32,26 +35,29 @@ body.dark {
   margin-top: 40px;
 }
 
-.title {
+/* .title {
   position: fixed;
   top: 10px;
   font-weight: bold;
+} */
+ .title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
 }
+
 
 /* ======================
    LOGO
 ====================== */
 .logo {
-  margin-top: 40px;
-  width: 180px;
-  height: 180px;
-  background: #665efa; /* main color */
-  color: white;
+  /* background: #665efa;  */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  overflow: hidden;
   /* font-size: 24px; */
 
   /* Glow effect */
@@ -67,7 +73,6 @@ body.dark {
 
 /* Dark mode glow */
 body.dark .logo {
-  background: #6366f1;
   box-shadow: 0 0 10px rgba(99, 102, 241, 0.5), 0 0 20px rgba(99, 102, 241, 0.3);
 }
 
@@ -203,6 +208,7 @@ body.dark .link a {
    THEME TOGGLE BUTTON
 ====================== */
 .theme-toggle {
+  width: 50px;
   position: fixed;
   top: 15px;
   right: 15px;
@@ -220,3 +226,72 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.top-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-combined {
+    position: relative;
+    width: 160px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.logo-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 0;
+}
+
+.logo-circle.left {
+    left: 0;
+    z-index: 1;
+}
+
+.logo-circle.right {
+    right: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+
+  .logo-combined {
+    width: 160px;
+    height: 100px;
+  }
+
+  .logo-circle {
+    width: 85px;
+    height: 85px;
+  }
+}
+.logo-circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+}

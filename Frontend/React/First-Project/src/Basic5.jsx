@@ -11,7 +11,7 @@ function Basic5(){
     function oneTmeCall(){ alert("i am function oneTimeCall..."); }
     // oneTmeCall();
 
-    useEffect(()=>oneTmeCall(),[]);
+    // useEffect(()=>oneTmeCall(),[]);
     
     
 // --------------- JSX ( UI )  ------------------
